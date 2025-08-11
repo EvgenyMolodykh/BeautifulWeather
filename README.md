@@ -19,7 +19,7 @@
 
 <h4>Шаблон проектирования:<h4> MVVM (Model-View-ViewModel)
 
-Внедрение зависимостей: реализовано с помощью Microsoft.Extensions.DependencyInjection
+Внедрение зависимостей: реализовано с помощью DependencyInjection
 
 Связывание данных: XAML и C# для разделения пользовательского интерфейса и логики
 
