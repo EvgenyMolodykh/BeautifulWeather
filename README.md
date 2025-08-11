@@ -12,12 +12,12 @@
 
 Адаптивный пользовательский интерфейс: Разработан на основе WPF, что обеспечивает современный и отзывчивый пользовательский интерфейс.
 
-Использованные технологии
-Фронтенд: WPF (Windows Presentation Foundation)
+<h4>Использованные технологии<h4>
+<h4>Фронтенд:<h4> WPF (Windows Presentation Foundation)
 
-Бэкенд: REST API (OpenMeteo API)
+<h4>Бэкенд:<h4> REST API (OpenMeteo API), (YandexGeoCoder).
 
-Шаблон проектирования: MVVM (Model-View-ViewModel)
+<h4>Шаблон проектирования:<h4> MVVM (Model-View-ViewModel)
 
 Внедрение зависимостей: реализовано с помощью Microsoft.Extensions.DependencyInjection
 
