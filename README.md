@@ -13,7 +13,7 @@
 Скачайте архив.
 
 ![123](https://github.com/user-attachments/assets/33582da4-e688-445b-9b05-0cd15b34fdcf)
-Разархивируйте файлы и откройте папку compiller, установочный файл setup.exe
+Разархивируйте файлы и закройте папку compiler, установочный файл setup.exe
 
 ![123_1](https://github.com/user-attachments/assets/83976201-5acd-4bf5-a6ca-21fa0d1c50e7)
 
