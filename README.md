@@ -1,4 +1,6 @@
 # BeautifulWeather
+![123_4](https://github.com/user-attachments/assets/aa9d47ab-e091-4d3d-a67f-091b37d41db7)
+
 Приложение разработано с использованием технологии **WPF** и архитектуры **MVVM** (Model-View-ViewModel).
 <hr>
 Основные функции:<br>
@@ -6,8 +8,14 @@
 - Прогноз погоды на несколько дней вперёд.<br>
 - Просмотр почасового прогноза.<br>
 - Настройка параметров отображения.<br>
-<hr>
-Как установить?
+
+# Как установить?
+Скачайте архив.
+
+![123](https://github.com/user-attachments/assets/33582da4-e688-445b-9b05-0cd15b34fdcf)
+Разархивируйте файлы и откройте папку compiller, установочный файл setup.exe
+
+![123_1](https://github.com/user-attachments/assets/83976201-5acd-4bf5-a6ca-21fa0d1c50e7)
 
 <hr>
 Технологии:
