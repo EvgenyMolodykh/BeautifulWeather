@@ -8,7 +8,7 @@
 - Настройка параметров отображения.<br>
 <hr>
 Как установить?
-https://github.com/user-attachments/assets/6d73c5cb-8918-40b2-ac05-839c39a45747
+
 <hr>
 Технологии:
 <h4>- Frontend: WPF (XAML, C#)</h4>
