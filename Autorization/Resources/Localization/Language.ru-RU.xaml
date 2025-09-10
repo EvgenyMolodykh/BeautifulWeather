@@ -1,0 +1,98 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib">
+    <v:String x:Key="lang">ru-Ru</v:String>
+
+    <!--  Главная страница  -->
+    <v:String x:Key="MainWindowTitle">Погода</v:String>
+    <v:String x:Key="HomeTitle">Главная</v:String>
+    <v:String x:Key="LocationsTitle">Места</v:String>
+    <v:String x:Key="SettingsTitle">Настройки</v:String>
+    <v:String x:Key="Exit">Выход</v:String>
+    <v:String x:Key="Registration">Регистрация</v:String>
+    <v:String x:Key="Login">Войти</v:String>
+    <v:String x:Key="Account">Личный кабинет</v:String>
+
+    <!--  Страница погоды  -->
+    <v:String x:Key="DateHeader">Прогноз погоды</v:String>
+    <v:String x:Key="NightTemperature">Ночью</v:String>
+    <v:String x:Key="WindGusts">Порывы до</v:String>
+    <v:String x:Key="HourlyForecast">Прогноз на каждый час</v:String>
+    <v:String x:Key="Time">Время</v:String>
+    <v:String x:Key="ApparentTemperature">Ощущается</v:String>
+    <v:String x:Key="Wind">Ветер</v:String>
+    <v:String x:Key="Hours">ч</v:String>
+    <v:String x:Key="Minutes">м</v:String>
+    <v:String x:Key="DaylightHours">Световой день</v:String>
+    <v:String x:Key="MoonPhazes">Фаза</v:String>
+    <v:String x:Key="Temp">Температура</v:String>
+    <v:String x:Key="Pressure">Давление</v:String>
+    <v:String x:Key="Precipitation">Влажность</v:String>
+    <v:String x:Key="Day">День</v:String>
+    <v:String x:Key="Week">Неделя</v:String>
+    <v:String x:Key="CheckConnection">Проверьте подключение к сети</v:String>
+    <v:String x:Key="Speed">Скорость вертра</v:String>
+    <v:String x:Key="Weather">Погода</v:String>
+    <v:String x:Key="Direct">Направление</v:String>
+
+    <!--  Расшифровка кодов погоды  -->
+    <v:String x:Key="NoData">Нет данных</v:String>
+
+    <v:String x:Key="ClearSky">Ясно</v:String>
+    <v:String x:Key="MainlyClear">Преимущественно ясно</v:String>
+    <v:String x:Key="PartlyCloudly">Облачно с проянениями</v:String>
+    <v:String x:Key="Overcast">Пасмурно</v:String>
+    <v:String x:Key="Fog">Туман</v:String>
+    <v:String x:Key="DepositingRimeFog">Изморось</v:String>
+    <v:String x:Key="SlightRain">Небольшой дождь</v:String>
+    <v:String x:Key="ModerateRain">Дождь</v:String>
+    <v:String x:Key="HeavyRain">Сильный дождь</v:String>
+
+    <!--  Дни недели  -->
+    <v:String x:Key="Monday">Понедельник</v:String>
+    <v:String x:Key="Tuesday">Вторник</v:String>
+    <v:String x:Key="Wednesday">Среда</v:String>
+    <v:String x:Key="Thursday">Четверг</v:String>
+    <v:String x:Key="Friday">Пятница</v:String>
+    <v:String x:Key="Saturday">Суббота</v:String>
+    <v:String x:Key="Sunday">Воскресенье</v:String>
+
+    <!--  Системы измерения градусов -->
+    <v:String x:Key="Celsius">°C</v:String>
+    <v:String x:Key="Fahrenheit">°F</v:String>
+
+    <v:String x:Key="Kmh">км/ч</v:String>
+    <v:String x:Key="Ms">м/с</v:String>
+    <v:String x:Key="Mph">миль/ч</v:String>
+    <v:String x:Key="Kn">узлы</v:String>
+
+    <v:String x:Key="Mm">мм</v:String>
+    <v:String x:Key="Cm">см</v:String>
+    <v:String x:Key="Inch">дюйм</v:String>
+
+
+    <v:String x:Key="HPa">гПа</v:String>
+    <v:String x:Key="mmHg">мм рт. ст.</v:String>
+    <v:String x:Key="RelativeHumidity">Влажность</v:String>
+
+    <!--  Стороны света  -->
+    <v:String x:Key="West">З</v:String>
+    <v:String x:Key="East">В</v:String>
+    <v:String x:Key="North">С</v:String>
+    <v:String x:Key="South">Ю</v:String>
+
+    <!--  Страница настроек -->
+
+    <v:String x:Key="TemperatureMeasurementMenuSetting">Единицы измерения температуры</v:String>
+    <v:String x:Key="PressureMenuSetting">Единицы измерения давления</v:String>
+    <v:String x:Key="MeasurementMenuSetting">Единицы измерения осадков</v:String>
+    <v:String x:Key="WindSpeedMenuSetting">Единицы измерения скорости ветра</v:String>
+    <v:String x:Key="LanguageMenuSetting">Язык</v:String>
+
+    <!-- Локация -->
+    <v:String x:Key="Location">Локация</v:String>
+    <v:String x:Key="SelectLocation">Выбранное место:</v:String>
+    <v:String x:Key="FavouriteLocations">Избранные места:</v:String>
+    <v:String x:Key="SearchPlaceHolder">Найти любую точку на планете</v:String>
+
+</ResourceDictionary>

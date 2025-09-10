@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Geometry x:Key="menuMainGeometry">F1 M32,32z M0,0z M974,57C975.104569,57 976,57.8954305 976,59 976,60.1045695 975.104569,61 974,61L946,61C944.895431,61 944,60.1045695 944,59 944,57.8954305 944.895431,57 946,57L974,57z M974,48C975.104569,48 976,48.8954305 976,50 976,51.1045695 975.104569,52 974,52L946,52C944.895431,52 944,51.1045695 944,50 944,48.8954305 944.895431,48 946,48L974,48z M974,39C975.104569,39 976,39.8954305 976,41 976,42.1045695 975.104569,43 974,43L946,43C944.895431,43 944,42.1045695 944,41 944,39.8954305 944.895431,39 946,39L974,39z</Geometry>
+    <DrawingGroup x:Key="menuMainDrawingGroup" ClipGeometry="M0,-5 V27 H32 V0 H-5 Z">
+        <DrawingGroup.Transform>
+            <TranslateTransform X="0" Y="5" />
+        </DrawingGroup.Transform>
+        <DrawingGroup Opacity="1">
+            <DrawingGroup Opacity="1" Transform="1,0,0,1,-2294,-159">
+                <DrawingGroup Opacity="1" Transform="1,0,0,1,1350,120">
+                    <GeometryDrawing Brush="#FF1C1C1F" Geometry="{StaticResource menuMainGeometry}" />
+                </DrawingGroup>
+            </DrawingGroup>
+        </DrawingGroup>
+    </DrawingGroup>
+    <DrawingImage x:Key="menuMainDrawingImage" Drawing="{StaticResource menuMainDrawingGroup}" />
+</ResourceDictionary>

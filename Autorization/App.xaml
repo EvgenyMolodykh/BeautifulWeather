@@ -1,0 +1,43 @@
+﻿<Application x:Class="WeatherAppWPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WeatherAppWPF"
+             Startup="OnStartup">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Icons/WeatherIcons.xaml"/>
+                <ResourceDictionary Source="Resources/Icons/WindDirectionIcons.xaml"/>
+                <ResourceDictionary Source="Resources/Themes/ColorThemes.xaml"/>
+                <ResourceDictionary Source="Resources/Themes/ColorButtonSettings.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/LeftPanel/LeftPanelButton.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/MainWindow/HeaderStyles.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/Auth/RegistrationWindowStyle.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/Auth/SingInWindowStyle.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/HourlyForecastView/HourlyForecastViewStyles.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/ForecastDayItemStyle/ForecastDayItemStyle.xaml"/>
+                <ResourceDictionary Source="Resources/Fonts/Fonts.xaml"/>
+                <ResourceDictionary Source="Resources/Triggers/Triggers.xaml"/>
+                <ResourceDictionary Source="Resources/Icons/IconsLeftArrow.xaml"/>
+                <ResourceDictionary Source="Resources/Icons/IconsPressureAndWater.xaml"/>
+                <ResourceDictionary Source="Resources/Icons/IconsRightArrow.xaml"/>
+                <ResourceDictionary Source="Resources/IconsSVG/IconsSvgNew.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/LeftPanel/LeftPanel.xaml"/>
+                <ResourceDictionary Source="Resources/Icons/UpDateButton.xaml"/>
+                <ResourceDictionary Source="Resources/Localization/Language.en-US.xaml"/>
+                <ResourceDictionary Source="Resources/Localization/Language.ru-RU.xaml"/>
+                <ResourceDictionary Source="Resources/Icons/ButtonFavorite.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/MainWindow/ButtonMainView.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/HourlyForecastView/HourlyForecastView.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/HourlyForecastView/BorderHourlyForecastView.xaml"/>
+                <ResourceDictionary Source="Resources/Icons/MainMenuIcon.xaml"/>
+                <ResourceDictionary Source="Resources/Icons/SettingsLan.xaml"/>
+                <ResourceDictionary Source="Resources/Icons/IconsForSettings.xaml"/>
+                <ResourceDictionary Source="Resources/Icons/WeatherOsadock.xaml"/>
+                <ResourceDictionary Source="Resources/Icons/PresureIconsSetting.xaml"/>
+                <ResourceDictionary Source="Resources/Icons/SpeedWeather.xaml"/>
+                
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

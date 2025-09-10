@@ -1,0 +1,19 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <FontFamily x:Key="MicroSansSerifFont">./#microsansanserif</FontFamily>
+    <FontFamily x:Key="TsvikSPDemoFont">./#TsvikSPDemo</FontFamily>
+    <FontFamily x:Key="AileronBlackFont">./#Aileron Black</FontFamily>
+    <FontFamily x:Key="AileronBlackItalicFont">./#Aileron Black Italic</FontFamily>
+    <FontFamily x:Key="AileronBoldFont">./#Aileron Bold</FontFamily>
+    <FontFamily x:Key="AileronBoldItalicFont">./#Aileron Bold Italic</FontFamily>
+    <FontFamily x:Key="AileronHeavyFont">./#Aileron Heavy</FontFamily>
+    <FontFamily x:Key="AileronHeavyItalicFont">./#Aileron Heavy Italic</FontFamily>
+    <FontFamily x:Key="AileronLightFont">./#Aileron Light</FontFamily>
+    <FontFamily x:Key="AileronLightItalicFont">./#Aileron Light Italic</FontFamily>
+    <FontFamily x:Key="AileronRegularFont">./#Aileron Regular</FontFamily>
+    <FontFamily x:Key="AileronSemiBoldFont">./#Aileron SemiBold</FontFamily>
+    <FontFamily x:Key="AileronSemiBoldItalicFont">./#Aileron SemiBold Italic</FontFamily>
+    <FontFamily x:Key="AileronThinFont">./#Aileron Thin</FontFamily>
+    <FontFamily x:Key="AileronUltraLightFont">./#Aileron UltraLight</FontFamily>
+    <FontFamily x:Key="AileronUltraLightItalicFont">./#Aileron UltraLight Italic</FontFamily>
+</ResourceDictionary>

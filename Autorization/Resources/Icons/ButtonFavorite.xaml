@@ -1,0 +1,28 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Geometry x:Key="favorite_svgrepo_comGeometry">F0 M24,24z M0,0z M11.993,5.09691C11.0387,4.25883 9.78328,3.75 8.40796,3.75 5.42122,3.75 3,6.1497 3,9.10988 3,10.473 3.50639,11.7242 4.35199,12.67L12,20.25 19.4216,12.8944 19.641,12.6631C20.4866,11.7172 21,10.473 21,9.10988 21,6.1497 18.5788,3.75 15.592,3.75 14.2167,3.75 12.9613,4.25883 12.007,5.09692L12,5.08998 11.993,5.09691z M12,7.09938L12.0549,7.14755 12.9079,6.30208 12.9968,6.22399C13.6868,5.61806 14.5932,5.25 15.592,5.25 17.763,5.25 19.5,6.99073 19.5,9.10988 19.5,10.0813 19.1385,10.9674 18.5363,11.6481L18.3492,11.8453 12,18.1381 5.44274,11.6391C4.85393,10.9658 4.5,10.0809 4.5,9.10988 4.5,6.99073 6.23699,5.25 8.40796,5.25 9.40675,5.25 10.3132,5.61806 11.0032,6.22398L11.0921,6.30203 11.9452,7.14752 12,7.09938z</Geometry>
+    <DrawingGroup x:Key="favorite_svgrepo_comDrawingGroup" ClipGeometry="M0,0 V24 H24 V0 H0 Z">
+        <GeometryDrawing Brush="red" 
+                         Geometry="{StaticResource favorite_svgrepo_comGeometry}" />
+    </DrawingGroup>
+    <DrawingImage x:Key="favorite_svgrepo_comDrawingImage" 
+                  Drawing="{StaticResource favorite_svgrepo_comDrawingGroup}" />
+
+    <Geometry x:Key="delete_svgrepo_comGeometry">F0 M32,32z M0,0z M538.708,1151.28C538.314,1150.89,537.676,1150.89,537.281,1151.28L534.981,1153.58 532.742,1151.34C532.352,1150.95 531.718,1150.95 531.327,1151.34 530.936,1151.73 530.936,1152.37 531.327,1152.76L533.566,1154.99 531.298,1157.26C530.904,1157.65 530.904,1158.29 531.298,1158.69 531.692,1159.08 532.331,1159.08 532.725,1158.69L534.993,1156.42 537.232,1158.66C537.623,1159.05 538.257,1159.05 538.647,1158.66 539.039,1158.27 539.039,1157.63 538.647,1157.24L536.408,1155.01 538.708,1152.71C539.103,1152.31,539.103,1151.68,538.708,1151.28L538.708,1151.28z M545.998,1162C545.998,1163.1,545.102,1164,543.996,1164L526.467,1164 518.316,1154.98 526.438,1146 543.996,1146C545.102,1146,545.998,1146.9,545.998,1148L545.998,1162 545.998,1162z M543.996,1144L526.051,1144C525.771,1143.98,525.485,1144.07,525.271,1144.28L516.285,1154.22C516.074,1154.43 515.983,1154.71 515.998,1154.98 515.983,1155.26 516.074,1155.54 516.285,1155.75L525.271,1165.69C525.467,1165.88,525.723,1165.98,525.979,1165.98L525.979,1166 543.996,1166C546.207,1166,548,1164.21,548,1162L548,1148C548,1145.79,546.207,1144,543.996,1144L543.996,1144z</Geometry>
+    <DrawingGroup x:Key="delete_svgrepo_comDrawingGroup" ClipGeometry="M0,-5 V27 H32 V0 H-5 Z">
+        <DrawingGroup.Transform>
+            <TranslateTransform X="0" Y="5" />
+        </DrawingGroup.Transform>
+        <DrawingGroup Opacity="1">
+            <DrawingGroup Opacity="1" Transform="1,0,0,1,-516,-1144">
+                <GeometryDrawing Brush="#FF000000" Geometry="{StaticResource delete_svgrepo_comGeometry}" />
+            </DrawingGroup>
+        </DrawingGroup>
+    </DrawingGroup>
+    <DrawingImage x:Key="delete_svgrepo_comDrawingImage" Drawing="{StaticResource delete_svgrepo_comDrawingGroup}" />
+</ResourceDictionary>
+
+
+
+
+
+

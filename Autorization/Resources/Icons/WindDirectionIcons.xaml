@@ -1,0 +1,58 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Стрелка вверх (Север) -->
+    <ControlTemplate x:Key="wind_arrow_north" TargetType="ContentControl">
+        <Grid Width="32" Height="32">
+            <Path Data="M 10 0 L 16 4 L 10 8 M 0 4 L 16 4"
+                  Stroke="Black" StrokeThickness="3"
+                  RenderTransformOrigin="0.1,0.1">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="-90"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+        </Grid>
+    </ControlTemplate>
+
+    <!-- Стрелка вниз (Юг) -->
+    <ControlTemplate x:Key="wind_arrow_south" TargetType="ContentControl">
+        <Grid Width="32" Height="32">
+            <Path Data="M 10 0 L 16 4 L 10 8 M 0 4 L 16 4"
+                  Stroke="Black" StrokeThickness="3"
+                  RenderTransformOrigin="0.1,0.1">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+        </Grid>
+    </ControlTemplate>
+
+    <!-- Стрелка влево (Запад) -->
+    <ControlTemplate x:Key="wind_arrow_west" TargetType="ContentControl">
+        <Grid Width="32" Height="32">
+            <Path Data="M 10 0 L 16 4 L 10 8 M 0 4 L 16 4"
+                  Stroke="Black" StrokeThickness="3"
+                  RenderTransformOrigin="0.1,0.1">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+        </Grid>
+    </ControlTemplate>
+
+    <!-- Стрелка вправо (Восток) -->
+    <ControlTemplate x:Key="wind_arrow_east" TargetType="ContentControl">
+        <Grid Width="32" Height="32">
+            <Path Data="M 10 0 L 16 4 L 10 8 M 0 4 L 16 4"
+                  Stroke="Black" StrokeThickness="3"
+                  RenderTransformOrigin="0.1,0.1"/>
+        </Grid>
+    </ControlTemplate>
+
+</ResourceDictionary>

@@ -1,0 +1,21 @@
+﻿<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Geometry x:Key="languageGeometry">F1 M52,52z M0,0z M39,18.67L35.42,18.67 31.22,29.79A29,29,0,0,1,20.6,24.91A28.76,28.76,0,0,0,27.71,10.42L32.92,10.42A2,2,0,0,0,32.92,6.42L19.67,6.42 19.67,2A2,2,0,1,0,15.67,2L15.67,6.42 2.41,6.42A2,2,0,0,0,2.41,10.42L7.63,10.42A28.73,28.73,0,0,0,14.73,24.91A29.51,29.51,0,0,1,3.27,30A2,2,0,0,0,3.7,34A1.61,1.61,0,0,0,4.14,33.95A32.56,32.56,0,0,0,17.67,27.7A32,32,0,0,0,29.8,33.6L22.83,52 28,52 30.7,44.24 43.64,44.24 46.37,52 51.59,52z M23.7,10.42A23.76,23.76,0,0,1,17.7,22.28A23.71,23.71,0,0,1,11.7,10.42z M32.38,39.57L37.21,25.74 42,39.57z</Geometry>
+    <DrawingGroup x:Key="languageDrawingGroup" ClipGeometry="M0,0 V52 H52 V0 H0 Z">
+        <DrawingGroup Opacity="1">
+            <GeometryDrawing Brush="#FF8D83AA" 
+                             Geometry="{StaticResource languageGeometry}">
+                <GeometryDrawing.Pen>
+                    <Pen Brush="#FF8D83AA" 
+                         Thickness="1" 
+                         StartLineCap="Flat" 
+                         EndLineCap="Flat" 
+                         LineJoin="Miter" />
+                </GeometryDrawing.Pen>
+            </GeometryDrawing>
+        </DrawingGroup>
+    </DrawingGroup>
+    <DrawingImage x:Key="languageDrawingImage" 
+                  Drawing="{StaticResource languageDrawingGroup}" />
+</ResourceDictionary>

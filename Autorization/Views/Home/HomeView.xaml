@@ -1,0 +1,94 @@
+﻿<UserControl x:Class="WeatherAppWPF.Views.Home.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:vm="clr-namespace:WeatherAppWPF.ViewModels" 
+             xmlns:local="clr-namespace:WeatherAppWPF.Views.DayFarecastDetails" 
+             xmlns:converters="clr-namespace:WeatherAppWPF.Resources.Converters"
+             xmlns:local1="clr-namespace:WeatherAppWPF.Views.HourlyForecast"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <converters:TemperatureConverter x:Key="TemperatureConverter" />
+    </UserControl.Resources>
+    <Grid>
+        <Grid>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="1.2*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <local:DayForecastDetailsView DataContext="{Binding SelectedDay}"/>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <local1:HourlyForecastView DataContext="{Binding SelectedDay}"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="LeftArrowButton"
+                                    Grid.Column="0"
+                                    Style="{StaticResource LeftButtonStyle}"
+                                    Margin="0,5,20,20" 
+                                     Click="LeftArrowButton_Click"/>
+
+                    <ScrollViewer x:Name="WeatherScrollViewer"
+              Grid.Column="1"
+              HorizontalScrollBarVisibility="Hidden"
+              VerticalScrollBarVisibility="Disabled"
+              CanContentScroll="True">
+                        <ListBox x:Name="WeaterDays_ListBox" 
+                             Grid.Row="1"
+                               Grid.Column="1"
+                               ItemsSource="{Binding ForecastsDays }"
+                               SelectedItem="{Binding SelectedDay}"
+                               ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                               ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                               SelectionMode="Single"
+                               BorderThickness="0"
+                               Background="Transparent">
+
+                            <ListBox.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <StackPanel Orientation="Horizontal"></StackPanel>
+                                </ItemsPanelTemplate>
+                            </ListBox.ItemsPanel>
+
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Border Style="{StaticResource ForecastItemStyle}" Width="120">
+                                        <StackPanel Orientation="Vertical">
+                                            <TextBlock Text="{Binding Path=Date, StringFormat='{}{0:dd MMM}'}" Margin="10,10,0,0"/>
+                                            <Label Content="{Binding Path=MaxTemperature, Converter={StaticResource TemperatureConverter}}"/>
+                                            <Label Content="{Binding Path=MinTemperature}"/>
+                                            <Label Content="{Binding Path=WeekDay}"/>
+                                            <Label Content="{Binding Path=Wheather}"/>
+                                        </StackPanel>
+                                    </Border>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </ScrollViewer>
+                    <Button x:Name="RightArrowButton"
+                              Grid.Column="2"
+                              Style="{StaticResource RightButtonStyle}"
+                              Margin="0,5,20,20"
+                              Click="RightArrowButton_Click"/>    
+                </Grid> 
+            </Grid>
+
+        </Grid>
+    </Grid>
+</UserControl>

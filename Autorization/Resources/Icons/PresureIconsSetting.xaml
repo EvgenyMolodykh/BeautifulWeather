@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Geometry x:Key="gauge_indicator_svgrepo_comGeometry1">F1 M512,512z M0,0z M256,512C114.512,512 0,397.503 0,256 0,114.512 114.497,0 256,0 397.488,0 512,114.497 512,256 512,397.488 397.503,512 256,512z</Geometry>
+    <Geometry x:Key="gauge_indicator_svgrepo_comGeometry2">F1 M512,512z M0,0z M256,0L256,512C397.503,512 512,397.488 512,256 512,114.497 397.488,0 256,0z</Geometry>
+    <Geometry x:Key="gauge_indicator_svgrepo_comGeometry3">F1 M512,512z M0,0z M256,455.111C146.21,455.111 56.889,365.79 56.889,256 56.889,146.21 146.21,56.889 256,56.889 365.79,56.889 455.111,146.21 455.111,256 455.111,365.79 365.79,455.111 256,455.111z</Geometry>
+    <Geometry x:Key="gauge_indicator_svgrepo_comGeometry4">F1 M512,512z M0,0z M256,56.889L256,455.111C365.79,455.111 455.111,365.79 455.111,256 455.111,146.21 365.79,56.889 256,56.889z</Geometry>
+    <Geometry x:Key="gauge_indicator_svgrepo_comGeometry5">F1 M512,512z M0,0z M280.587,256C280.587,265.425,288.228,273.067,297.654,273.067L454.372,273.067C455.357,261.528,455.358,250.486,454.372,238.934L297.654,238.934C288.229,238.933,280.587,246.575,280.587,256z</Geometry>
+    <Geometry x:Key="gauge_indicator_svgrepo_comGeometry6">F1 M512,512z M0,0z M231.287,238.933L57.628,238.933C56.643,250.472,56.642,261.514,57.628,273.066L231.287,273.066C240.712,273.066 248.354,265.425 248.354,255.999 248.354,246.575 240.713,238.933 231.287,238.933z</Geometry>
+    <Geometry x:Key="gauge_indicator_svgrepo_comGeometry7">F1 M512,512z M0,0z M228.196,283.805C202.085,257.69,211.629,213.659,245.39,200.2L319.008,170.815C332.906,165.267,346.731,179.103,341.184,192.994L313.502,262.329C296.209,305.795,251.648,307.253,228.196,283.805z</Geometry>
+    <Geometry x:Key="gauge_indicator_svgrepo_comGeometry8">F1 M512,512z M0,0z M319.009,170.813L256,195.964 256,298.151C277.667,301.877,301.813,291.711,313.503,262.328L341.185,192.993C346.732,179.101,332.907,165.266,319.009,170.813z</Geometry>
+    <DrawingGroup x:Key="gauge_indicator_svgrepo_comDrawingGroup" ClipGeometry="M0,0 V512 H512 V0 H0 Z">
+        <GeometryDrawing Brush="#FFF2F2F2" Geometry="{StaticResource gauge_indicator_svgrepo_comGeometry1}" />
+        <GeometryDrawing Brush="#FFAEB6BD" Geometry="{StaticResource gauge_indicator_svgrepo_comGeometry2}" />
+        <GeometryDrawing Brush="#FF40596B" Geometry="{StaticResource gauge_indicator_svgrepo_comGeometry3}" />
+        <GeometryDrawing Brush="#FF364C5C" Geometry="{StaticResource gauge_indicator_svgrepo_comGeometry4}" />
+        <GeometryDrawing Brush="#FF2C3E4E" Geometry="{StaticResource gauge_indicator_svgrepo_comGeometry5}" />
+        <GeometryDrawing Brush="#FF364C5C" Geometry="{StaticResource gauge_indicator_svgrepo_comGeometry6}" />
+        <GeometryDrawing Brush="#FFFFD15C" Geometry="{StaticResource gauge_indicator_svgrepo_comGeometry7}" />
+        <GeometryDrawing Brush="#FFF8B64C" Geometry="{StaticResource gauge_indicator_svgrepo_comGeometry8}" />
+    </DrawingGroup>
+    <DrawingImage x:Key="gauge_indicator_svgrepo_comDrawingImage" Drawing="{StaticResource gauge_indicator_svgrepo_comDrawingGroup}" />
+</ResourceDictionary>

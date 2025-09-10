@@ -1,0 +1,121 @@
+﻿<Window x:Class="WeatherAppWPF.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeatherAppWPF"
+        mc:Ignorable="d"
+        Title="Регистрация пользователя" Height="300" Width="400"
+        Background="{DynamicResource DayMainWindowGradient}"
+        x:Name="RegistrationWindowUser"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label x:Name="Login_Label" 
+               Grid.Row="0" 
+               Content="Регистрация" 
+               Style="{StaticResource TextStyle}"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Label x:Name="Login_TextBlock"
+                       Content="Введите логин:" 
+                       Style="{StaticResource TextStyle}"/>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Border HorizontalAlignment="Right" 
+                        Margin="0,0,10,0"
+                        Style="{StaticResource BorderStyle}">
+                    <TextBox x:Name="RegLogin_TextBox"
+                            Style="{StaticResource TextBoxStyle}"
+                            Text="{Binding LoginRegistration}"/>   
+                </Border>
+            </Grid>
+            
+            
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Label x:Name="Password_TextBlock"
+                       Content="Введите пароль:" 
+                       Style="{StaticResource TextStyle}"/>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Border Grid.Column="1" 
+                        HorizontalAlignment="Right" Margin="0,0,10,0"
+                        Style="{StaticResource BorderStyle}">
+                    <TextBox x:Name="RegPassword_TextBox"
+                             Style="{StaticResource TextBoxStyle}"
+                             Text="{Binding RegPassword}"/> 
+                </Border>
+            </Grid>
+            
+        </Grid>
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Label x:Name="Confirm_TextBlock"
+                       HorizontalAlignment="Left"
+                       Content="Подтвердите пароль:" 
+                       Style="{StaticResource TextStyle}"/>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Border Style="{StaticResource BorderStyle}" HorizontalAlignment="Right" Margin="0,0,10,0">
+                    <TextBox x:Name="ConfirmPassword_TextBox"
+                             Style="{StaticResource TextBoxStyle}"
+                             Text="{Binding ConfirmPassword}"/> 
+                </Border>
+        </Grid>
+            
+            
+        </Grid>
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Label x:Name="Confirm_TextBlock1"
+                        HorizontalAlignment="Left"
+                        Content="Key Yandex API:" 
+                        Style="{StaticResource TextStyle}"/>
+            </Grid>
+            <Grid Grid.Column="1" Margin="0,0,10,0">
+                <Border Style="{StaticResource BorderStyle}" HorizontalAlignment="Right">
+                    <TextBox x:Name="ApiKey_TextBox"
+                             Style="{StaticResource TextBoxStyle}"
+                             Text="{Binding YandexApiKey}"/>
+                </Border>
+            </Grid>
+        </Grid>
+            
+            
+
+        <Button x:Name="Registration_Button"
+                Grid.Row="5"
+                Content="Зарегистрироваться"
+                Width="170"
+                Height="30"
+                Style="{StaticResource ButtonStyleRegistration}"
+                Command="{Binding RegistrationCommand}"
+                CommandParameter="{Binding ElementName=RegistrationWindowUser}"
+                Background="NavajoWhite"/>
+    </Grid>
+</Window>
